@@ -54,6 +54,8 @@
   .next-art{margin-top:48px;padding-top:28px;border-top:1px solid var(--line);display:flex;justify-content:flex-end;}
   .next-art a{display:flex;align-items:center;gap:8px;color:var(--purple);font-weight:600;font-size:15px;}
   .next-art a:hover{text-decoration:underline;}
+  .tool-link{display:inline-flex;align-items:center;gap:8px;background:var(--purple);color:#fff;padding:11px 22px;border-radius:30px;font-weight:600;font-size:14.5px;margin-bottom:32px;}
+  .tool-link:hover{background:#6a3df0;}
   .sub-heading{display:flex;align-items:center;gap:10px;font-size:15px;font-weight:600;margin:28px 0 14px;}
   .sub-heading .badge{width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex:0 0 auto;color:#fff;font-size:13px;}
   .sub-heading .badge.ok{background:var(--purple);}
@@ -90,6 +92,8 @@
       <h1>What is Strategy Builder?</h1>
       <p class="meta">Last updated &middot; June 2025 &middot; 4 min read</p>
       <p class="lead">Strategy Builder is Melio's internal risk configuration tool. It lets the Risk Platform team define, version, and deploy the logic that determines how payments and organizations are evaluated for risk — without writing code.</p>
+
+      <a class="tool-link" href="https://mos.production.melioservices.com/feature-strategy-builder/strategies" target="_blank" rel="noopener">Open Strategy Builder &rarr;</a>
 
       <h2>Why it exists</h2>
       <p>Every payment that flows through Melio is assessed for risk. Historically, changing that assessment logic meant a code deployment — slow, error-prone, and requiring engineering involvement for every tweak. Strategy Builder removes that bottleneck.</p>
