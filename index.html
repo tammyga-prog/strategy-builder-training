@@ -18,10 +18,14 @@
   .wordmark{color:var(--purple);font-weight:600;font-size:26px;letter-spacing:-.02em;}
   .logo .light{color:var(--muted);font-size:18px;}
   .wrap{max-width:800px;margin:0 auto;padding:36px 30px 80px;}
-  .hero{background:var(--lav);border-radius:20px;padding:46px 48px;}
+  .hero{background:var(--lav);border-radius:20px;padding:46px 48px;display:flex;align-items:center;gap:32px;}
+  .hero .copy{flex:1;min-width:0;}
   .hero h1{margin:0 0 14px;font-size:38px;line-height:1.05;}
   .hero h1 em{color:var(--purple);font-style:italic;}
   .hero p{margin:0;color:#4a4a4f;font-size:16.5px;line-height:1.55;max-width:580px;}
+  .hero .art{flex:0 0 160px;width:160px;height:160px;}
+  .hero .art img{width:100%;height:100%;object-fit:contain;}
+  @media(max-width:640px){.hero{flex-direction:column;}.hero .art{order:-1;}}
   .card{border:1px solid var(--line);border-radius:18px;padding:30px 30px 24px;margin-top:28px;}
   .card ul{list-style:none;margin:0;padding:0;}
   .card li{display:flex;align-items:center;gap:12px;padding:12px 0;font-size:16px;border-bottom:1px solid var(--line);}
@@ -38,9 +42,12 @@
   </header>
   <main class="wrap">
     <section class="hero">
-      <h1>Your Guide to <em>Strategy Builder</em></h1>
-      <p>Learn how to build rules, group them into strategies, and compare versions before rolling changes out.</p>
-      <a class="btn" href="https://mos.production.melioservices.com/feature-strategy-builder/strategies" target="_blank" rel="noopener">Open Strategy Builder &rarr;</a>
+      <div class="copy">
+        <h1>Your Guide to <em>Strategy Builder</em></h1>
+        <p>Learn how to build rules, group them into strategies, and compare versions before rolling changes out.</p>
+        <a class="btn" href="https://mos.production.melioservices.com/feature-strategy-builder/strategies" target="_blank" rel="noopener">Open Strategy Builder &rarr;</a>
+      </div>
+      <div class="art"><img src="assets/shield-mascot.png" alt="Strategy Builder shield mascot"></div>
     </section>
     <div class="card">
       <ul>
